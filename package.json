@@ -1,6 +1,6 @@
 {
-	"name": "meetballs-sveltekit-blog",
-	"private": true,
+	"name": "ahi-blog",
+	"private": false,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -42,5 +42,8 @@
 		"remark-abbr": "^1.4.2",
 		"remark-github": "^12.0.0",
 		"url": "^0.11.4"
+	},
+	"optionalDependencies": {
+	  "@rollup/rollup-linux-x64-gnu": "4.9.5"
 	}
 }
