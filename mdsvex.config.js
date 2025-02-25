@@ -2,11 +2,12 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import remarkAbbr from 'remark-abbr';
 
-import { dirname, fromFileUrl } from 'https://deno.land/std/path/mod.ts';
-import { join } from 'node:path';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-const __dirname = dirname(fromFileUrl(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const blogLayout = join(__dirname, 'src/lib/layouts/blog.svelte');
+
 
 export const mdsvexConfig = {
 	extensions: ['.svelte.md', '.md', '.svx'],
